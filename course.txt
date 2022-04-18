@@ -1,0 +1,63 @@
+1. We are going to develop a e-commerce website
+	react basic
+	react router
+	redux
+	stripe(payments)
+	hooks
+	redux
+	progressive web apps - pwa
+	graphql
+	firebase
+	jest - testing 
+	we will know when to use those components
+
+5. React Concepts
+	why react exist ?
+	React 2013 de çıkmış, eskiden html(sayfa yapısı), css(süsleme) ve js(interactivity) vardı
+	tüm dosyaları yollardık clienta, client form doldurursa form server a yollanıyordu, veya client linke basarsa yeni html css js yollanıyordu serverdan. Bu dosyaların browserlar tarafından ele alınması gerekiyordu.
+
+	
+	dom -> sayfayı inceleye basınca, bir html çıkar ya karşına, o işte
+	js de bu domu günceller değiştirir amacı budur.
+
+	jquery çıkmış bunu ortaklaştırmak için , unified easy api si vardı bunun
+	dom u dğeiştirmek için ortak bir syntax oluşturmuş browser bağımsız. 
+	ama siteler büyüdükçe mesela face de tüm bildirimler haberler çok fazla bu büyük domları yönetmek için backbone js çıkmış.
+
+	artık eskiye göre spa lar geldi, tüm js i bir seferde yolluyorsun, yeni alanlarda server a gitmek zorunda kalmıyor, js ile açık sayfa güncelleniyor
+
+	2010 da angular çıkmış google tarafından, büyük uygulamaları bununla geliştirmeye başlamışlar. model view controller düzeni kullanımı kolaylaştırmış.
+
+	Buradaki sorun is angular da uygulama büyüdükçe yine işler karışmaya başlamış. birbiriyle iletişime geçen her parçanın takibi zorlaşmış.
+	Complexity artmış. 
+
+	Facebook tarafından react geliştirilmiş sonradan 2013 de. 
+	Sonra 2014 de angularjs i yeniden yazıp angular olarak yine sisteme girmiş millet react a kaçmaya başlayınca.
+
+7. React Concepts, imperative vs declerative
+	1. Don't touch the DOM, I'll do it.
+		ekranda ne görüneceğini dom oluşturur. js bu domu günceller.
+		manuelde getElementByTagName ile filan elementi bulup güncelliyorduk veya jquery ile, buna IMPERATIVE deniyor, direkt değiştiriyorsun elemanı manuel olarak.
+		DECLERTIVE: dom dğeişimi en büyük bottlenecklerden biridir, elementi güncelleyip yeniden renderlamak expensivedir. React diyor ki sen nereyi güncellemek istiyorsan söyle, ben yapayım. bir api gibi çalışıyor senin yerine.doma dokunmuyorsun.sadece şu fieldların değerine bak ve ona göre güncelle bu alanları diyorsun mesela.
+	2. COMPONENTS
+		reusable parts of your page.
+		profil resmi, navigation bar için vs componentların var. farklı yerlerde kullanabilirsin bunları.mesela materialUi components kullanabilirsin.
+		function veya class component olarak tanımlanabilir. mesela datepicker vs için.
+
+9. one way data flow
+	COMPONENT, STATE e baktık şimdiy kadar. react state e bakarak virtual dom oluşturur. sonra virtualDom a bakarak dom u günceller. Burada one way bir iletişim vardır. Data asla yukarı gitmez aşağı taşınır sadece ?? burayı anlamadım. kod üzerinden anlatacak. mesela component ın subcomponentlarına taşınmaz.
+	bu yüzden bir datayı takip etmek daha kolay olur.
+10 REACT CONCEPTS
+	1. Dont touch dom Ill do it
+	2. Build websites like lego blocks
+	3. Unidirectional data flow
+	4. UI, The rest is up to you
+		mesel angularjs sana ocak, kaşık tabak, malzeme verir git istediğini pişir der.
+		ama react, daha çok ocak gibi sadece, bıçak filanı istediğin gibi seçme özgürlüğü veriyorum onu da kendin yap diyor. Bu yüzden learn once use it anywhere diyor. farklı tech stacklerle kullanabilirsin bu yüzden. Sadece ReactDom be core React library ile bunları yapabiliriz.
+11. How tobe good react developer
+	1. Decide on components.
+	2. Decide state and where it lives
+	3. What changes should we make when state changes.
+
+14. Section Overview
+	
